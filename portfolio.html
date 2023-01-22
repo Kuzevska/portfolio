@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add CSS styles for the buttons */
+      .button {
+        width: 570px;
+        height: 416px;
+
+        background: #B9B9B9;
+        border-radius: 50px;
+        color: white; 
+        padding: 16px;
+        font-size: 16px; 
+        border: none; 
+        cursor: pointer;
+        margin: 0 10px; 
+        font-family: Futura, sans-serif;
+        position: relative;
+        text-align: left;
+        
+      }
+      
+      .button .first-row {
+        font-size: 30px;
+        border-bottom: 1px solid white;
+      }
+      /* styling for the second row of text inside button*/
+      .button .second-row {
+        font-size: 16px;
+        padding-top: 16px;
+        vertical-align: bottom;
+      }
+      
+      .button:first-child::before {
+        content: "";
+        background-image: url('https://github.com/Kuzevska/portfolio/blob/main/logo.png'); 
+        background-repeat: no-repeat;
+        background-position: top left;
+        width: 50px; 
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; 
+      }
+
+      /* Add a responsive design for the buttons */
+      .button-container {
+        display: flex; /* Use flexbox layout */
+        justify-content: space-between; /* Space the buttons evenly */
+      }
+
+      /* Add media queries for different screen sizes */
+      @media (max-width: 600px) {
+        .button-container {
+          flex-wrap: wrap; /* Wrap the buttons on small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="button" style="background:#CECECE">
+        <div class="first-row">Ripa H. Kuzevska</div>
+        <div class="second-row">Skopje based freelance designer and marketing consultant.</div>
+      </button>
+      <button class="button">
+        <div class="first-row">About</div>
+        <div class="second-row">Creating experiences with the combination of design & marketing.</div>
+      </button>
+      <button class="button" style="background: #0CABA8">
+        <div class="first-row">Services</div>
+        <div class="second-row">Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</div>
+      </button>
+    </div>
+    <div class="button-container" style="margin-top: 20px;">
+      <button class="button" style="background: #008F8C">
+        <div class="first-row">Work</div>
+        <div class="second-row">Lorem Ipsum is simply dummy text</div>
+      </button>
+      <button class="button" style="background: #015958">
+        <div class="first-row">Clients</div>
+        <div class="second-row">Working everywhere, from Skopje.</div>
+      </button>
+      <button class="button" style="background: #023535">
+        <div class="first-row">Contact</div>
+        <div class="second-row">Ready to make something special?</div>
+      </button>
+    </div>
+  </body>
+</html>
